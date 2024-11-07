@@ -1,0 +1,118 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vh;
+  margin: 0px;
+  background-color: black;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 250px;
+  margin: 20px;
+  gap: 1vh;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  height: 75px;
+  width: 75px;
+  border-radius: 100%/100%;
+  border: none;
+  font-size: 35px;
+}
+
+.operators1{
+  background-color: rgba(106, 106, 106, 0.618);
+  color: rgb(7, 7, 7);
+}
+
+#backspace{
+  background-image: url('backspace.jpg');
+  background-size: 75px;
+}
+
+
+.operators2 {
+  background-color: rgba(255, 171, 14, 0.967);
+  text-align: center;
+  border-radius: 100%/100%;
+  color: white;
+  font-size: 35px;
+}
+
+.nums{
+  background-color: rgba(25, 25, 25, 0.732);
+  color: white;
+}
+
+
+.diff {
+  background-color: rgb(117, 110, 110);
+  text-align: center;
+  border-radius: 100%/100%;
+  color: white;
+  font-size: 35px;
+} 
+
+.operators1:hover{
+  background-color: rgba(106, 106, 106, 0.481);
+}
+
+.operators2:hover {
+  background-color:  rgba(255, 171, 14, 0.732);
+}
+
+.nums:hover{
+  background-color: rgba(25, 25, 25, 0.681);
+}
+
+/* 
+.diff:hover{
+  background-color: rgb(99, 91, 91);
+} */
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#screen {
+  height: 80px;
+  width: 325px;
+  font-size: 52px;
+  text-align: right;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+#screen-container {
+  justify-content: center;
+  align-items: center;
+}
+
+/* #outerC{
+  position: relative;
+}
+
+
+#innerC{
+  background-image: url('backspace.jpg');
+  position: absolute;
+}
+
+.nums.button:hover{
+  background-color: rgba(36, 31, 31, 0.845);
+} */
+
+
+button:active{
+  transform: scale(0.95);
+}
