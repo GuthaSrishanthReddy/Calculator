@@ -1,5 +1,3 @@
-console.log("hey");
-
 const screen = document.getElementById("screen");
 screen.value = 0;
 
